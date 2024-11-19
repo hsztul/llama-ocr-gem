@@ -2,13 +2,15 @@
 
 A Ruby gem to run OCR for free with Llama 3.2 Vision.
 
+Based on the npm package [llama-ocr](https://github.com/Nutlope/llama-ocr) and llamaOCR.com
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```
 ruby
-gem 'llama-ocr'
+gem 'llama-ocr-gem'
 ```
 
 And then execute:
@@ -19,7 +21,7 @@ $ bundle install
 Or install it yourself as:
 
 ```
-$ gem install llama-ocr
+$ gem install llama-ocr-gem
 ```
 
 ## Usage
@@ -39,14 +41,6 @@ This gem uses the free Llama 3.2 endpoint from [Together AI](https://dub.sh/toge
 
 You can control this with the `model` option which is set to `Llama-3.2-90B-Vision` by default but can also accept `free` or `Llama-3.2-11B-Vision`.
 
-## Roadmap
-
-- [x] Add support for local images OCR
-- [x] Add support for remote images OCR
-- [ ] Add support for single page PDFs
-- [ ] Add support for multi-page PDFs OCR (take screenshots of PDF & feed to vision model)
-- [ ] Add support for JSON output in addition to markdown
-
 ## Credit
 
-This project was inspired by [Zerox](https://github.com/getomni-ai/zerox). Go check them out!
+Based on the npm package [llama-ocr](https://github.com/Nutlope/llama-ocr) and llamaOCR.com

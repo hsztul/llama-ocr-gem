@@ -28,7 +28,7 @@ $ gem install llama-ocr-gem
 ```
 ruby
 require 'llama_ocr'
-markdown = LlamaOCR::OCR.ocr(
+markdown = LlamaOCR::OCR.convert(
     file_path: "./trader-joes-receipt.jpg", # path to your image (soon PDF!)
     api_key: ENV['TOGETHER_API_KEY'] # Together AI API key
 )

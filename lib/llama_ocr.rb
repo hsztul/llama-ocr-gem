@@ -8,7 +8,7 @@ module LlamaOCR
   class OCR
     TOGETHER_API_URL = 'https://api.together.xyz/v1/chat/completions'.freeze
 
-    def self.ocr(file_path:, api_key: ENV['TOGETHER_API_KEY'], model: 'Llama-3.2-90B-Vision')
+    def self.convert(file_path:, api_key: ENV['TOGETHER_API_KEY'], model: 'Llama-3.2-90B-Vision')
       new(file_path: file_path, api_key: api_key, model: model).perform
     end
 
